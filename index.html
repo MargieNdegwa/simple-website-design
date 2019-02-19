@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+                <img src="images/logo.svg" alt="maggie's logo" class="logo">
+                
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="images/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+                    <ul class="show-desktop hide-mobile" id="nav">
+                        
+                        <li id="exit" class="exit-btn hide-desktop">
+                            <img src="images/exit.svg" alt="exit menu">
+                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+
+                </nav>
+        </header>
+        <section>
+            <img src="images/server.png" alt="server graphic" class="server">
+            <h1>Understand technology from our perspective</h1>
+            <p class="subhead">Be in the know regarding the best technology</p>
+            <img src="images/scroll.svg" alt="scroll down" class="scroll hide-mobile show-desktop">
+        </section>
+    </div>
+    <div class="blue-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/icon-1.svg" alt="calendar icon">
+                    <p>26 and four is accessible, throughout the year and we are here to make sure that your enquiries are met, with immediate effect</p>
+                </li>
+                <li>
+                    <img src="images/icon-2.svg" alt="calendar icon">
+                    <p>Work with us for a professional experience with the best web developers in the industry</p>
+                </li>
+                <li>
+                    <img src="images/icon-3.svg" alt="calendar icon">
+                    <p>Our services are mobile friendly, ensuring your clients get access to your website straight from their phones</p>
+                </li>
+            </ul>
+         </div>
+
+    </div>
+    <div class="gray-container">
+        <div class="container">
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/user1.png" alt="User Testimonial Picture">
+                        <blockquote>I am the Front End Guru, i make your website standout and have an appealing outlook</blockquote>
+                        <figcaption>Margaret Ndegwa</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="images/user2.png" alt="User Testimonial Picture">
+                        <blockquote>I am the back end developer, i make sure that your website has the appropriate functionalities</blockquote>
+                        <figcaption>Tony Njau</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Start your free trial Now!</h1>
+        <a href="#" class="cta">Get Started</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <a href="#">
+                    <img src="images/logo-white.svg" alt="logo" class="logo"></a>
+                    <p class="address">Lanet, Nakuru<br> Kenya</p>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    
+            var menu = document.getElementById('menu');
+            var nav = document.getElementById('nav');
+            var exit = document.getElementById('exit');
+    
+            menu.addEventListener('click', function(e) {
+                nav.classList.toggle('hide-mobile');
+                e.preventDefault();
+            });
+    
+            exit.addEventListener('click', function(e) {
+                nav.classList.add('hide-mobile');
+                e.preventDefault();
+            });
+    
+    </script>
+</body>
+</html>
